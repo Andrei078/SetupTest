@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Microfon – SetupTest</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/microphone.css">
+</head>
+<body>
+
+<main class="container microphone-page">
+
+  <a href="../index.html" class="back">⬅ Înapoi</a>
+
+  <h1>Test Microfon</h1>
+  <p class="description">
+    Selectează microfonul dorit și vezi nivelul de volum, frecvența, latența și calitatea acestuia.
+  </p>
+
+  <div class="controls">
+    <select id="micSelect"></select>
+    <button id="toggleBtn">Pornește Microfon</button>
+  </div>
+
+  <div class="audio-visualizer">
+    <div class="bar" id="volumeBar"></div>
+  </div>
+
+  <div class="info">
+    <div class="info-box">
+      <span class="label">Volum</span>
+      <span id="volumeLevel">-</span>
+    </div>
+    <div class="info-box">
+      <span class="label">Frecvență dominantă</span>
+      <span id="frequency">- Hz</span>
+    </div>
+    <div class="info-box">
+      <span class="label">Latență estimată</span>
+      <span id="latency">- ms</span>
+    </div>
+    <div class="info-box">
+      <span class="label">Calitate</span>
+      <span id="quality">-</span>
+    </div>
+  </div>
+
+</main>
+
+<script src="../js/microphone.js"></script>
+</body>
+</html>
